@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Medical AI Scientist</title>
+    <meta
+      name="description"
+      content="Medical AI Scientist: a domain-aware autonomous research framework for clinical AI with Med-AI-Bench (171 cases, 19 tasks, 6 modalities)."
+    />
+    <meta property="og:title" content="Medical AI Scientist" />
+    <meta
+      property="og:description"
+      content="Autonomous scientific discovery in healthcare with clinically grounded ideation, domain-specific experimentation, and iterative manuscript review."
+    />
+    <meta property="og:image" content="static/images/hero.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Medical AI Scientist" />
+    <meta
+      name="twitter:description"
+      content="A medical-domain AI Scientist framework evaluated on Med-AI-Bench."
+    />
+    <meta name="twitter:image" content="static/images/hero.jpg" />
+    <link rel="stylesheet" href="static/css/index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="#top" style="display: flex; align-items: center; gap: 8px;">
+          <img src="static/images/icon.png" alt="Icon" style="height: 2.5em; width: auto;" />
+          Medical AI Scientist
+        </a>
+        <nav>
+          <a href="#overview">Overview</a>
+          <a href="#method">Method</a>
+          <a href="#medbench">Med-AI-Bench</a>
+          <a href="#results">Results</a>
+          <a href="#evidence-ideas">Ideas</a>
+          <a href="#cases">Case Studies</a>
+          <a href="#resources">Resources</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="biomni-hero">
+        <div class="biomni-container">
+          
+          <h1 class="biomni-title">Medical AI Scientist</h1>
+          
+          <p class="biomni-subtitle">
+            Domain-aware autonomous scientific discovery for clinical AI: <br>
+            from evidence-grounded ideation and medical experimentation to manuscript drafting and review.
+          </p>
+
+          <div class="biomni-badges">
+            <span class="biomni-badge">Evaluated on <strong>Med-AI-Bench</strong></span>
+            <span class="biomni-badge"><strong>19</strong>&nbsp;Tasks</span>
+            <span class="biomni-badge"><strong>6</strong>&nbsp;Data Modalities</span>
+          </div>
+          
+          <div class="biomni-actions">
+            <a class="biomni-btn biomni-btn-outline" href="Medical_AI_Scientist_w_appendix.pdf" target="_blank">📄 Paper</a>
+            <a class="biomni-btn biomni-btn-outline" href="https://github.com/CUHK-AIM-Group/Med-AI-Scientist" target="_blank">💻 GitHub (coming soon)</a>
+            <a class="biomni-btn biomni-btn-outline" href="https://huggingface.co/Med-AI-Scientist" target="_blank">🤗 HuggingFace (Dataset, coming soon)</a>
+          </div>
+
+          <div class="biomni-logos">
+            <div class="logo-card"><img src="static/images/cuhk.png" alt="Institution 1" /></div>
+            <div class="logo-card"><img src="static/images/Lehigh.png" alt="Institution 2" /></div>
+            <div class="logo-card"><img src="static/images/Stanford.png" alt="Institution 3" /></div>
+            <div class="logo-card"><img src="static/images/Microsoft.png" alt="Institution 4" /></div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="wrap two-col">
+          <div>
+            <h2>Why This Matters</h2>
+            <p>
+              Existing autonomous "AI Scientist" systems are largely domain-agnostic. <br> In medicine, that gap limits reliability, clinical relevance, and translational feasibility.
+              <strong>Medical AI Scientist</strong> introduces a framework explicitly designed for healthcare constraints, specialized data modalities, and evidence standards.
+            </p>
+          </div>
+          <div class="callout">
+            <h3>Core Contributions</h3>
+            <ol>
+              <li>Clinically grounded ideation with structured literature analysis.</li>
+              <li>Medical-specific execution pipelines and evaluation protocols.</li>
+              <li>Iterative manuscript drafting with relevance and ethics checks.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="method" class="section section-alt">
+        <div class="wrap">
+          <h2>System and Research Modes</h2>
+          <p class="section-intro">
+            The framework supports increasing autonomy across three modes.
+          </p>
+          <div class="cards">
+            <article class="card">
+              <h3>Mode 1: Reproduction</h3>
+              <p>Faithful re-implementation of specified hypotheses or target papers.</p>
+            </article>
+            <article class="card">
+              <h3>Mode 2: Innovation</h3>
+              <p>Literature-inspired ideation and adaptation for clinically meaningful improvements.</p>
+            </article>
+            <article class="card">
+              <h3>Mode 3: Exploration</h3>
+              <p>Open-ended discovery under task-driven objectives and domain constraints.</p>
+            </article>
+          </div>
+
+          <figure class="wide-figure carousel-container">
+            <button class="carousel-btn prev-btn" onclick="changeImage(-1)"></button>
+            
+            <div class="carousel-slide active">
+              <img src="static/images/overview.png" alt="Framework overview" />
+              <figcaption>Overview of the paper.</figcaption>
+            </div>
+
+            <div class="carousel-slide">
+              <img src="static/images/framework.png" alt="Framework overview" />
+              <figcaption>Overview of the framework.</figcaption>
+            </div>
+            
+            <div class="carousel-slide">
+              <img src="static/images/idea self_exploration.jpg" alt="Overview of idea self-exploration" />
+              <figcaption>Overview of idea self-exploration.</figcaption>
+            </div>
+
+            <button class="carousel-btn next-btn" onclick="changeImage(1)"></button>
+          </figure>
+        </div>
+      </section>
+
+      <section id="medbench" class="section medbench-section">
+        <div class="wrap">
+          <p class="eyebrow">Benchmark</p>
+          <h2>Med-AI-Bench</h2>
+          <p class="section-intro">
+            A structured benchmark for evaluating autonomous medical AI research
+            from hypothesis quality to experimental execution and paper-level outputs.
+          </p>
+          <div class="medbench-metrics">
+            <article class="metric-card">
+              <span class="metric-value">171</span>
+              <span class="metric-label">Curated Cases</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-value">19</span>
+              <span class="metric-label">Medical AI Tasks</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-value">6</span>
+              <span class="metric-label">Data Modalities</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-value">3</span>
+              <span class="metric-label">Autonomy Modes</span>
+            </article>
+          </div>
+          <div class="medbench-content">
+            <div class="callout">
+              <h3>How Med-AI-Bench Is Built</h3>
+              <p>
+                Each case is grounded in peer-reviewed reference papers and
+                organized for multi-stage evaluation: idea quality,
+                research-plan completeness, executable experimentation, and
+                paper-level output quality.
+              </p>
+            </div>
+            <aside class="callout">
+              <h3>Modalities</h3>
+              <div class="chip-grid">
+                <span class="chip"><span class="chip-icon" aria-hidden="true">🖼️</span>Image</span>
+                <span class="chip"><span class="chip-icon" aria-hidden="true">🎬</span>Video</span>
+                <span class="chip"><span class="chip-icon" aria-hidden="true">🧾</span>EHR</span>
+                <span class="chip"><span class="chip-icon" aria-hidden="true">🫀</span>ECG</span>
+                <span class="chip"><span class="chip-icon" aria-hidden="true">📄</span>Report Text</span>
+                <span class="chip"><span class="chip-icon" aria-hidden="true">🧠</span>Multimodal</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="section">
+        <div class="wrap">
+          <h2>Key Results</h2>
+          <div class="result-switch" role="tablist" aria-label="Key result types">
+            <button class="result-tab is-active" type="button" role="tab" aria-selected="true" data-result-target="three-stage">
+              LLM Evaluation (3 Stages)
+            </button>
+            <button class="result-tab" type="button" role="tab" aria-selected="false" data-result-target="human-idea">
+              Human Evaluation for Idea Generation 
+            </button>
+            <button class="result-tab" type="button" role="tab" aria-selected="false" data-result-target="new-analysis">
+              Human Evaluation Comparison with Top-tier Conference Papers
+            </button>
+          </div>
+
+          <figure class="wide-figure result-panel is-active" data-result-panel="three-stage">
+            <img src="static/images/result1.png" alt="LLM evaluation for idea generation, idea completion and experimentation" />
+          </figure>
+
+          <figure class="wide-figure result-panel" data-result-panel="human-idea" hidden>
+            <img src="static/images/result2.png" alt="Human evaluation for idea generation" />
+          </figure>
+
+          <figure class="wide-figure result-panel" data-result-panel="new-analysis" hidden>
+            <img src="static/images/result3.png" alt="" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="evidence-ideas" class="section section-alt">
+        <div class="wrap">
+          <p class="eyebrow">Idea Refinement</p>
+          <h2>Evidence-Enhanced Ideas</h2>
+          <p class="section-intro evidence-intro">
+            In mode-2 ideation, Medical AI Scientist does not stop at proposing
+            a plausible method. It cross-checks raw ideas against medical
+            literature and engineering evidence, then refines them into designs
+            with fewer unsupported assumptions and a clearer implementation path.
+          </p>
+
+          <div class="evidence-switch" role="tablist" aria-label="Evidence-enhanced idea examples">
+            <button class="evidence-tab is-active" type="button" role="tab" aria-selected="true" data-evidence-target="bioasq">
+              Case 1: BioASQ QA
+            </button>
+            <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-evidence-target="lab-risk">
+              Case 2: Lab Risk Forecasting
+            </button>
+          </div>
+
+          <div class="evidence-grid">
+            <article class="evidence-case evidence-panel is-active" data-evidence-panel="bioasq">
+              <div class="evidence-case-head">
+                <div>
+                  <p class="evidence-task">BioASQ Factoid QA</p>
+                  <h3>Case 1: BioASQ span extraction becomes evidence-grounded and calibration-aware</h3>
+                </div>
+                <p class="evidence-score">Human idea score: ours 23 vs best baseline 14</p>
+              </div>
+
+              <div class="evidence-columns">
+                <section class="evidence-block">
+                  <h4>Baseline ideas</h4>
+                  <div class="baseline-stack">
+                    <div class="baseline-card">
+                      <span class="baseline-label">GPT-5</span>
+                      <p>
+                        Proposed a memory-augmented QA architecture with UMLS-aware
+                        hierarchy reasoning, external memory, and reinforcement learning.
+                        The design is broad and ambitious, but it introduces several
+                        moving parts without a tight link to BioASQ factoid constraints.
+                      </p>
+                    </div>
+                    <div class="baseline-card">
+                      <span class="baseline-label">Gemini 2.5 Pro</span>
+                      <p>
+                        Proposed a unified multi-task framework for factoid, list, and
+                        yes/no QA. It is implementable, but it stays generic and does not
+                        directly address answer calibration or surface-form mismatch in
+                        factoid extraction.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="evidence-block">
+                  <h4>Our raw idea</h4>
+                  <p>
+                    Started from a span-entailment co-training design with an
+                    in-document evidence graph and answer-type priors. The direction
+                    already targeted grounded span selection, but the mechanism for
+                    span normalization and synonym robustness was still diffuse.
+                  </p>
+
+                  <h4>Evidence used</h4>
+                  <ul class="evidence-list">
+                    <li>
+                      <strong>Medical paper:</strong> <em>Sequence tagging for biomedical
+                      extractive question answering</em> shows that biomedical QA should
+                      move beyond single-span extraction plus brittle post-processing.
+                      This supports replacing loosely coupled span heuristics with a
+                      globally normalized span model.
+                    </li>
+                    <li>
+                      <strong>Medical paper:</strong> <em>External features enriched model
+                      for biomedical question answering</em> reports gains from lexical and
+                      syntactic features on BioASQ factoid QA, supporting explicit use of
+                      question-conditioned alignment and feature-aware span scoring.
+                    </li>
+                    <li>
+                      <strong>Engineering paper:</strong> <em>From flat direct models to
+                      segmental CRF models</em> supports modeling spans as segments rather
+                      than independent start/end points, which directly motivated the
+                      segmental CRF layer.
+                    </li>
+                    <li>
+                      <strong>Engineering paper:</strong> <em>Alignment Information via
+                      Optimal Transport and Pre-training for Neural Machine Translation</em>
+                      supports using optimal transport as an explicit token-alignment prior,
+                      motivating OT-guided question-context alignment before span decoding.
+                    </li>
+                  </ul>
+                </section>
+              </div>
+
+              <section class="evidence-outcome">
+                <div class="outcome-card">
+                  <h4>Evidence-enhanced final idea</h4>
+                  <p>
+                    <strong>Optimal-Transport Alignment Guided Segmental CRF with Neural
+                    Edit-Transduction Normalizer.</strong> The final design sharpens the
+                    original concept into three concrete pieces: OT-based
+                    question-context alignment, a globally normalized segmental CRF for
+                    span selection, and a lightweight edit-transduction normalizer for
+                    biomedical synonym and orthographic variation.
+                  </p>
+                </div>
+                <div class="outcome-card">
+                  <h4>Why it is better</h4>
+                  <ul class="benefit-list">
+                    <li>Replaces vague reasoning loops with task-matched span modeling.</li>
+                    <li>Uses literature-backed lexical and syntactic signals instead of ad hoc heuristics.</li>
+                    <li>Improves feasibility because each module maps to a standard, implementable component.</li>
+                    <li>Reduces hallucination risk by grounding answer selection in aligned evidence and normalized spans.</li>
+                  </ul>
+                </div>
+              </section>
+            </article>
+
+            <article class="evidence-case evidence-panel" data-evidence-panel="lab-risk" hidden>
+              <div class="evidence-case-head">
+                <div>
+                  <p class="evidence-task">MIMIC-IV Lab Risk Forecasting</p>
+                  <h3>Case 2: Free-form generative forecasting is refined into calibrated set-based EHR modeling</h3>
+                </div>
+                <p class="evidence-score">Human idea score: ours 25 vs best baseline 18</p>
+              </div>
+
+              <div class="evidence-columns">
+                <section class="evidence-block">
+                  <h4>Baseline ideas</h4>
+                  <div class="baseline-stack">
+                    <div class="baseline-card">
+                      <span class="baseline-label">GPT-5</span>
+                      <p>
+                        Proposed a dynamic graph-transformer over patient trajectories.
+                        The idea is expressive, but the graph construction is broad and
+                        underspecified for irregular lab forecasting.
+                      </p>
+                    </div>
+                    <div class="baseline-card">
+                      <span class="baseline-label">Gemini 2.5 Pro</span>
+                      <p>
+                        Proposed retrieval-augmented generative lab forecasting. It is
+                        novel, but it introduces a large retrieval-and-generation stack
+                        that is harder to validate and calibrate for continuous lab values.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="evidence-block">
+                  <h4>Our raw idea</h4>
+                  <p>
+                    Started with a text-style autoregressive transformer
+                    (<strong>LabGPT</strong>) that tokenized heterogeneous EHR events and
+                    generated future lab values as text. The idea was flexible, but still
+                    leaned too heavily on generation for a calibrated numeric forecasting task.
+                  </p>
+
+                  <h4>Evidence used</h4>
+                  <ul class="evidence-list">
+                    <li>
+                      <strong>Medical paper:</strong> <em>MedGCN: Medication recommendation
+                      and lab test imputation via graph convolutional networks</em> supports
+                      modeling heterogeneous clinical entities jointly rather than flattening
+                      them into one text stream, and provides precedent for lab-focused
+                      EHR reasoning with missing values.
+                    </li>
+                    <li>
+                      <strong>Medical paper:</strong> <em>Semi-supervised ROC analysis for
+                      reliable and streamlined evaluation of phenotyping algorithms</em>
+                      highlights the need for reliable evaluation and calibration under
+                      limited supervision, reinforcing the move away from unconstrained
+                      token generation toward uncertainty-aware prediction.
+                    </li>
+                    <li>
+                      <strong>Engineering paper:</strong> <em>Predicting Stroke from
+                      Electronic Health Records</em> supports explicitly modeling
+                      inter-dependent EHR risk factors instead of treating history as a
+                      plain sequence of tokens.
+                    </li>
+                    <li>
+                      <strong>Engineering paper:</strong> <em>Graph-Based Temporal Attention
+                      for Coronary Artery Disease Prediction Using Electronic Health
+                      Records</em> supports temporal set/graph reasoning for irregular EHR
+                      events, motivating a structured encoder over heterogeneous visits.
+                    </li>
+                  </ul>
+                </section>
+              </div>
+
+              <section class="evidence-outcome">
+                <div class="outcome-card">
+                  <h4>Evidence-enhanced final idea</h4>
+                  <p>
+                    <strong>FlowLab-SET:</strong> a time-conditioned Set Transformer encoder
+                    with conditional monotonic normalizing flows for calibrated lab
+                    forecasting. The refined version drops the free-form decoder in favor
+                    of a structured event encoder and density model that better matches the
+                    continuous, irregular, uncertainty-sensitive nature of lab prediction.
+                  </p>
+                </div>
+                <div class="outcome-card">
+                  <h4>Why it is better</h4>
+                  <ul class="benefit-list">
+                    <li>Matches the prediction target: numeric lab forecasting instead of text generation.</li>
+                    <li>Uses heterogeneous EHR structure supported by prior medical and engineering work.</li>
+                    <li>Improves implementability with a clearer encoder-plus-density-model decomposition.</li>
+                    <li>Reduces unsupported generative behavior and makes uncertainty calibration explicit.</li>
+                  </ul>
+                </div>
+              </section>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cases" class="section">
+        <div class="wrap">
+          <h2>Case Studies</h2>
+          <p>Read the full case study PDFs directly below.</p>
+          
+          <div class="pdf-grid">
+            <article class="pdf-card">
+              <h3>Case Study 1</h3>
+              <iframe class="pdf-frame" src="case1.pdf#view=FitH" title="Case Study 1 PDF"></iframe>
+              <p class="pdf-links">
+                <a href="case1.pdf" target="_blank" rel="noopener">Open in new tab</a>
+                <a href="case1.pdf" download>Download PDF</a>
+              </p>
+            </article>
+
+            <article class="pdf-card">
+              <h3>Case Study 2</h3>
+              <iframe class="pdf-frame" src="case2.pdf#view=FitH" title="Case Study 2 PDF"></iframe>
+              <p class="pdf-links">
+                <a href="case2.pdf" target="_blank" rel="noopener">Open in new tab</a>
+                <a href="case2.pdf" download>Download PDF</a>
+              </p>
+            </article>
+
+            <article class="pdf-card">
+              <h3>Case Study 3</h3>
+              <iframe class="pdf-frame" src="case3.pdf#view=FitH" title="Case Study 3 PDF"></iframe>
+              <p class="pdf-links">
+                <a href="case3.pdf" target="_blank" rel="noopener">Open in new tab</a>
+                <a href="case3.pdf" download>Download PDF</a>
+              </p>
+            </article>
+
+            <article class="pdf-card">
+              <h3>Case Study 4</h3>
+              <iframe class="pdf-frame" src="case4.pdf#view=FitH" title="Case Study 4 PDF"></iframe>
+              <p class="pdf-links">
+                <a href="case4.pdf" target="_blank" rel="noopener">Open in new tab</a>
+                <a href="case4.pdf" download>Download PDF</a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="section">
+        <div class="wrap two-col">
+          <div>
+            <h2>Resources</h2>
+            <ul class="resource-list">
+              <li><a href="Medical_AI_Scientist_w_appendix.pdf" target="_blank" rel="noopener">Full Paper (PDF)</a></li>
+            </ul>
+            <h3>BibTeX</h3>
+            <pre id="bibtex">@article{medical_ai_scientist_2026,
+              title   = {Medical AI Scientist},
+              author  = {Author List},
+              journal = {Preprint},
+              year    = {2026}
+            }</pre>
+            <button class="btn" id="copyBib">Copy BibTeX</button>
+          </div>
+
+          <aside class="callout">
+            <h3>PR Starter Blurb</h3>
+            <p id="prBlurb">
+              Medical AI Scientist is an autonomous research framework designed
+              specifically for medical AI. It combines clinically grounded
+              hypothesis generation, domain-specific experimentation, and
+              iterative manuscript review, and is evaluated on Med-AI-Bench with
+              171 curated cases across 19 tasks and 6 modalities.
+            </p>
+            <button class="btn" id="copyBlurb">Copy PR Blurb</button>
+            <p class="muted">Replace placeholders with your final author, venue, code, and demo links.</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand">
+          <h2 class="brand-title" style="display: flex; align-items: center; gap: 8px;">
+            <img src="static/images/icon.png" alt="Icon" style="height: 1.2em; width: auto;" />
+            Medical AI Scientist
+          </h2>
+          <p class="brand-subtitle">Autonomous scientific discovery for clinical AI.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="Medical_AI_Scientist_w_appendix.pdf" target="_blank">Research Paper</a></li>
+            <li><a href="https://github.com/CUHK-AIM-Group/Med-AI-Scientist" target="_blank">GitHub Repository</a></li>
+            <li><a href="https://huggingface.co/Med-AI-Scientist" target="_blank">HuggingFace Repository</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <div class="contact-item">
+            <span class="icon">✉️</span>
+            <a href="mailto:yxyuan@ee.cuhk.edu.hk">yxyuan@ee.cuhk.edu.hk</a>
+          </div>
+          <a href="mailto:yxyuan@ee.cuhk.edu.hk" class="btn-message">
+            <span class="icon">📩</span> Send us a message
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2026 Medical AI Scientist. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="static/js/index.js"></script>
+  </body>
+</html>
